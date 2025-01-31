@@ -11,7 +11,6 @@ FLOW_ID = "911dc753-dc21-46dc-afe3-05fb09d3c37f"
 APPLICATION_TOKEN = "AstraCS:AoEAtwrCxbFzdEyyBkltMljc:885fb572a21ac89eda2125b3122017cc3b1877f4d9813c7d47f3c7c0539d1b53"
 ENDPOINT = ""  # Default endpoint
 
-
 # Initialize FastAPI app
 app = FastAPI()
 
@@ -50,7 +49,6 @@ def run_flow(
         "input_type": input_type,
     }
     if tweaks:
-        tweaks.pop("ChatInput-hoDbI", None)  # Remove conflicting tweak key
         payload["tweaks"] = tweaks
 
     headers = {"Authorization": f"Bearer {APPLICATION_TOKEN}", "Content-Type": "application/json"}
@@ -71,7 +69,7 @@ def chat(request: ChatRequest):
             endpoint=request.endpoint or ENDPOINT,
             output_type=request.output_type,
             input_type=request.input_type,
-            tweaks=request.tweaks or TWEAKS,
+            tweaks=request.tweaks,
         )
         return response
     except Exception as e:
