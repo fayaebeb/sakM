@@ -7,8 +7,8 @@ from typing import Optional
 # Constants
 BASE_API_URL = "https://api.langflow.astra.datastax.com"
 LANGFLOW_ID = "2e964804-1fee-4340-bb22-099f1e785ec1"
-FLOW_ID = "061c364a-1280-4b49-a56b-586d5dee8c8f"
-APPLICATION_TOKEN = "AstraCS:iQNdzmNUslRgkcfrJrEaTfTS:2d2adbb2b2c0b8994365af08a53570f059ff8e2d9733a9209ca5d292087f723e"
+FLOW_ID = "911dc753-dc21-46dc-afe3-05fb09d3c37f"
+APPLICATION_TOKEN = "AstraCS:AoEAtwrCxbFzdEyyBkltMljc:885fb572a21ac89eda2125b3122017cc3b1877f4d9813c7d47f3c7c0539d1b53"
 ENDPOINT = ""  # Default endpoint
 
 
