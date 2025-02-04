@@ -8,7 +8,7 @@ from typing import Optional
 BASE_API_URL = "https://api.langflow.astra.datastax.com"
 LANGFLOW_ID = "2e964804-1fee-4340-bb22-099f1e785ec1"
 FLOW_ID = "edf93eff-1384-4865-bc9e-b7bbcbd9ed1a"
-APPLICATION_TOKEN = "AstraCS:QcplIPULYDYwniCRpTkkJDcx:4209a4a7e4b85712c2aecb53e8462d368be1ae8684de799fcf0b821cf5f24c31"
+APPLICATION_TOKEN = "AstraCS:vEYwDffZZesEFUXfgiuYxhzr:55969a2420209f1731f4024d14339ae204c819fe06a5d01a65abe45b3243890d"
 ENDPOINT = ""  # Default endpoint
 
 # Initialize FastAPI app
